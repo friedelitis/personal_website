@@ -18,10 +18,20 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Smooth scroll
+// Hamburger menu
+const hamburger = document.querySelector('.hamburger');
+const navEl = document.querySelector('nav');
+hamburger.addEventListener('click', () => {
+  const open = navEl.classList.toggle('nav-open');
+  hamburger.setAttribute('aria-expanded', open);
+});
+
+// Smooth scroll (+ close mobile menu on nav click)
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
+    navEl.classList.remove('nav-open');
+    hamburger.setAttribute('aria-expanded', 'false');
     const target = document.querySelector(this.getAttribute('href'));
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
