@@ -1,0 +1,30 @@
+baseURL = 'https://christianfriedrich.org/'
+title = 'Christian Friedrich'
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.de]
+    languageName = 'DE'
+    weight = 1
+    contentDir = 'content/de'
+    [languages.de.params]
+      description = 'Organisationsberatung · Podcasting · Moderation'
+  [languages.en]
+    languageName = 'EN'
+    weight = 2
+    contentDir = 'content/en'
+    [languages.en.params]
+      description = 'Organizational Consulting · Podcasting · Facilitation'
+
+[params]
+  email = 'me@christianfriedrich.org'
+  linkedin = 'https://linkedin.com/in/christianfriedrich'
+  mastodon = 'https://mastodon.social/@friedelitis'
+  heroPhoto = '/img/_MHZ2744.jpg'
+  aboutPhoto = '/img/_MHZ2658.jpg'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,155 @@
+[nav_about]
+other = "Über mich"
+
+[nav_consulting]
+other = "Beratung"
+
+[nav_podcasting]
+other = "Podcasting"
+
+[nav_contact]
+other = "Kontakt"
+
+[hero_intro]
+other = "Hallo, ich bin Christian. Als Berater arbeite ich an den Schnittstellen von Technologie, Organisation und Lernen. Als Moderator helfe ich Teams und Gruppen in der Zusammenarbeit und führe große Gruppen durch große Veranstaltungen. Als Podcaster helfe ich allen, die nach ihrem Podcast-Konzept suchen. Besonders gern im Kontext Wissenschaft, Bildung, Zivilgesellschaft und Non-Profit-Organisationen."
+
+[hero_location]
+other = "Ich lebe und arbeite in Berlin."
+
+[hero_cta]
+other = "Schreib mir"
+
+[about_label]
+other = "Über mich"
+
+[about_p1]
+other = "Ich arbeite mit Organisationen aus Wissenschaft, Bildung und Zivilgesellschaft: Hochschulen, Verbände, Stiftungen, Non-Profits. Meistens dann, wenn Technologie auf Organisation, Kommunikation und Arbeitsweisen trifft und die Frage im Raum steht, wie das alles zusammenpasst."
+
+[about_p2]
+other = "Ich begleite Strategieprozesse und Programmarbeit, unterstütze bei Kommunikation und Capacity Building und moderiere Teamprozesse. Mein Hintergrund ist die systemische Organisationsberatung: Ich schaue auf das Ganze, nicht nur auf das, was gerade am lautesten ist."
+
+[about_p3]
+other = "Seit 2011 bin ich als Berater selbstständig, zunächst neben Festanstellungen, seit einigen Jahren in Vollzeit. Dazwischen und parallel war ich als Digital Officer am Wissenschaftszentrum Berlin für Sozialforschung (WZB), als Referent für Bildung und Wissenschaft bei Wikimedia Deutschland und im Aufbau der Leuphana Digital School an der Leuphana Universität Lüneburg. Jede dieser Stationen hat geschärft, wie ich heute auf Organisationen schaue: nah dran an der Praxis, analytisch und mit Respekt für das, was schon funktioniert."
+
+[about_p4]
+other = "Parallel dazu produziere und moderiere ich seit 2016 Podcasts, oft für Bildungseinrichtungen und Organisationen, die ein eigenes Format entwickeln wollen. Was als Nebenprojekt begann, ist inzwischen ein eigenständiger Arbeitsbereich."
+
+[credentials_label]
+other = "Ausbildung & Zertifizierungen"
+
+[credentials_list]
+other = "Systemischer Organisationsberater – artop, Berlin (2023)<br>Certified Scrum Master (CSM) – Scrum Alliance<br>ITIL Foundation Level<br>B.Sc. Wirtschaftspsychologie & Politikwissenschaften – Leuphana Universität Lüneburg"
+
+[consulting_label]
+other = "Beratung"
+
+[consulting_h2]
+other = "Veränderung begleiten,<br>Organisationen stärken"
+
+[consulting_intro1]
+other = "Ich berate Organisationen aus Wissenschaft, Bildung und Zivilgesellschaft: Hochschulen, Verbände, Stiftungen, Forschungseinrichtungen. Meistens geht es um Veränderung. Eine Strategie, die entwickelt werden soll. Strukturen, Entscheidungswege, Wissensmanagement oder interne Kommunikation, die nicht mehr passen."
+
+[consulting_intro2]
+other = "Mein Ansatz ist systemisch. Das heißt: Ich schaue nicht nur auf das Problem, das gerade auf dem Tisch liegt, sondern auf die Organisation drumherum. Auf Muster, Abhängigkeiten und das, was bisher unausgesprochen blieb. Die Lösung steht nicht von Anfang an fest. Und sie gehört am Ende der Organisation, nicht mir."
+
+[how_i_work]
+other = "Wie ich arbeite"
+
+[how_i_work_p1]
+other = "Am Anfang steht eine gründliche Analyse: Gespräche mit den Beteiligten, Dokumentenanalyse, Fokusgruppen, je nachdem, was die Situation braucht. Darauf aufbauend arbeite ich in Workshops, in Interventionen und in der direkten Beratung von Führungskräften und Teams."
+
+[how_i_work_p2]
+other = "Viele meiner Beratungsprozesse laufen über Monate. Ich analysiere regelmäßig neu, halte mit Teams und Leitung das Ziel im Blick und mache sichtbar, wo Entscheidungen noch ausstehen oder in der Umsetzung stecken bleiben."
+
+[how_i_work_p3]
+other = "Bei Bedarf arbeite ich mit einem Netzwerk aus Fachleuten für Kommunikationsberatung, Markenstrategie und Unternehmensidentität, Design, Prozessberatung und Software-Entwicklung zusammen."
+
+[service1_title]
+other = "Strategie & Organisations&shy;entwicklung"
+
+[service1_desc]
+other = "Strategieprozesse, Leitbildentwicklung, Restrukturierung, Professionalisierung interner Abläufe"
+
+[service2_title]
+other = "Digitale Transformation"
+
+[service2_desc]
+other = "Digitalstrategien, Change-Begleitung, Wissensmanagement, Abstimmung zwischen Bereichen und Stakeholdern"
+
+[service3_title]
+other = "Kommunikation & Capacity Building"
+
+[service3_desc]
+other = "Interne Kommunikationsprozesse, Programmarbeit, Aufbau interner Kompetenzen"
+
+[references_label]
+other = "Referenzen"
+
+[podcasting_label]
+other = "Podcasting"
+
+[podcasting_h2]
+other = "Gespräche, die Kontext herstellen"
+
+[podcasting_intro]
+other = "Ich konzipiere, moderiere und produziere Podcasts, seit 2016 und mit einem klaren Fokus auf Wissenschaft, Bildung und Zivilgesellschaft. Gute Podcasts beginnen für mich mit der Suche nach den passenden Gesprächspartner*innen, mit Gesprächen, die Kontext herstellen, mit den richtigen Nachfragen zur richtigen Zeit und mit Respekt für die Menschen, die mir gegenübersitzen."
+
+[podcast_svc1_title]
+other = "Konzeption & Formatentwicklung"
+
+[podcast_svc1_desc]
+other = "Von der ersten Idee zum fertigen Konzept: Zielgruppe, Format, Erzählhaltung, Struktur. Ich arbeite mit Organisationen, die ein eigenes Podcast-Format entwickeln wollen, und begleite auf Wunsch auch über die erste Staffel hinaus."
+
+[podcast_svc2_title]
+other = "Moderation & Hosting"
+
+[podcast_svc2_desc]
+other = "Ich moderiere eigene und fremde Formate als Host. Ich habe Erfahrung und ein gutes Gespür für Gespräche, aus vielen Stunden vor dem Mikrofon, in Interviews, Panels und Gesprächsrunden."
+
+[podcast_svc3_title]
+other = "Produktion"
+
+[podcast_svc3_desc]
+other = "Ich produziere Podcasts von der Aufnahme bis zur fertigen Episode, mit hohem Anspruch an mich und an die Qualität im Ergebnis."
+
+[podcast_svc4_title]
+other = "Workshops"
+
+[podcast_svc4_desc]
+other = "Podcast-Workshops für Einsteiger*innen: Technik, Konzeptentwicklung, schnelle Umsetzung. Am Ende des Workshops steht ein Konzept, mit dem sich arbeiten lässt."
+
+[current_formats]
+other = "Aktuelle Formate"
+
+[sicherheitsluecke_desc]
+other = "Ein Podcast über Cybersecurity: verständlich, fundiert und mit Haltung. Mit Volker Skwarek (HAW Hamburg), Monina Schwarz (LSI Bayern) und Ingo Timm (DFKI & Uni Trier). Konzeption und Produktion: Christian Friedrich. Ein Podcast der Hamburg Open Online University."
+
+[hwwdw_desc]
+other = "Bekannte Menschen aus Hamburg verraten, was sie wirklich lernen und wissen wollen. Im Gespräch verbinden wir ihre Lebensläufe und Lernwünsche mit den kostenlosen Lernangeboten der HOOU und ihren Themen. Moderation: Nicola Wessinghage & Christian Friedrich. Produktion: Christian Friedrich. Ein Podcast der Hamburg Open Online University."
+
+[contact_label]
+other = "Kontakt"
+
+[contact_h2]
+other = "Lass uns reden."
+
+[contact_sub]
+other = "Schreib mir, wenn du zusammenarbeiten oder einfach nur einen Kaffee trinken möchtest."
+
+[footer_copy]
+other = "© 2026 Christian Friedrich · Berlin"
+
+[footer_imprint]
+other = "Impressum"
+
+[footer_privacy]
+other = "Datenschutz"
+
+[overscroll_msg]
+other = "Weiter geht's nicht. Aber wir könnten"
+
+[overscroll_link]
+other = "reden"
+
+[vollgas_aria]
+other = "Farbe umschalten"
