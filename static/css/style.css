@@ -114,7 +114,7 @@ body {
   line-height: 1.7;
   color: var(--color-text);
   background: var(--color-bg);
-  transition: all 0.6s ease;
+  transition: background-color 0.6s ease, color 0.6s ease;
   overflow-x: hidden;
 }
 
@@ -127,7 +127,7 @@ a {
   color: var(--color-accent);
   text-decoration-color: rgba(123, 47, 247, 0.3);
   text-underline-offset: 3px;
-  transition: all 0.25s;
+  transition: color 0.25s, text-decoration-color 0.25s;
 }
 
 a:hover {
@@ -301,7 +301,7 @@ body.vollgas .overscroll-msg a { color: #C850C0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
   opacity: 0.5;
 }
 
@@ -331,7 +331,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.5s;
+  transition: background-color 0.5s, border-color 0.5s;
 }
 
 nav .nav-name {
@@ -340,7 +340,7 @@ nav .nav-name {
   letter-spacing: -0.01em;
   text-decoration: none;
   color: var(--color-text);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 nav .nav-links {
@@ -410,7 +410,7 @@ section { padding: var(--space-xl) 0; }
   line-height: 1.08;
   letter-spacing: -0.025em;
   margin-bottom: var(--space-sm);
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
 .hero-tagline {
@@ -444,7 +444,7 @@ section { padding: var(--space-xl) 0; }
   border: 1.5px solid var(--color-accent);
   color: var(--color-accent);
   text-decoration: none;
-  transition: all 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .hero-cta:hover {
@@ -464,7 +464,7 @@ section { padding: var(--space-xl) 0; }
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: var(--space-md);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 h2 {
@@ -490,7 +490,7 @@ p + p { margin-top: var(--space-sm); }
   border: none;
   border-top: 1px solid var(--color-border);
   margin: 0;
-  transition: all 0.4s;
+  transition: border-color 0.4s;
 }
 
 /* About */
@@ -512,7 +512,7 @@ p + p { margin-top: var(--space-sm); }
   width: 100%;
   display: block;
   margin-bottom: var(--space-md);
-  transition: all 0.4s;
+  transition: box-shadow 0.4s;
 }
 
 .credentials {
@@ -538,7 +538,7 @@ p + p { margin-top: var(--space-sm); }
   background: var(--color-bg-alt);
   border-left: 3px solid var(--color-accent);
   border-radius: 0 4px 4px 0;
-  transition: all 0.4s;
+  transition: background-color 0.4s, border-color 0.4s;
 }
 
 .how-i-work h3 { margin-bottom: var(--space-sm); }
@@ -562,7 +562,7 @@ p + p { margin-top: var(--space-sm); }
 .service-card {
   padding: var(--space-md) var(--space-sm) var(--space-md) 0;
   border-top: 2px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s, background 0.3s, padding-left 0.3s;
 }
 
 .service-card:hover {
@@ -592,7 +592,7 @@ p + p { margin-top: var(--space-sm); }
 .ref-item {
   padding: var(--space-sm) 0;
   border-top: 1px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s;
 }
 
 .ref-item .ref-org {
@@ -621,7 +621,7 @@ p + p { margin-top: var(--space-sm); }
 .podcast-service-card {
   padding: var(--space-md) 0;
   border-top: 2px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s;
 }
 
 .podcast-service-card:hover { border-top-color: var(--color-accent); }
@@ -638,7 +638,7 @@ p + p { margin-top: var(--space-sm); }
   margin-top: var(--space-md);
   padding: var(--space-md) 0;
   border-top: 1px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s;
 }
 
 .podcast-format h3 { font-size: 1.25rem; }
@@ -662,7 +662,7 @@ p + p { margin-top: var(--space-sm); }
 .contact-content h2 {
   font-size: 3rem;
   margin-bottom: var(--space-sm);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 .contact-email {
@@ -670,7 +670,7 @@ p + p { margin-top: var(--space-sm); }
   font-size: 1.5rem;
   display: inline-block;
   margin-bottom: var(--space-md);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 .contact-links {
@@ -692,7 +692,7 @@ footer {
   border-top: 1px solid var(--color-border);
   font-size: 0.75rem;
   color: var(--color-text-tertiary);
-  transition: all 0.4s;
+  transition: color 0.4s, border-color 0.4s;
 }
 
 .footer-content {
@@ -743,16 +743,6 @@ footer {
 }
 
 
-
-@keyframes pedal-rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Leg bob animation for rider */
-.vehicle-right.riding line[class*="leg"] {
-  /* subtle movement hint */
-}
 
 /* Animations */
 .fade-in {
