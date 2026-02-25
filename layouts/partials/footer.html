@@ -3,8 +3,8 @@
     <div class="footer-content">
       <span>{{ i18n "footer_copy" }}</span>
       <span class="footer-legal">
-        <a href="#">{{ i18n "footer_imprint" }}</a>
-        <a href="#">{{ i18n "footer_privacy" }}</a>
+        <a href="{{ if eq .Language.Lang "en" }}/en/imprint/{{ else }}/impressum/{{ end }}">{{ i18n "footer_imprint" }}</a>
+        <a href="{{ if eq .Language.Lang "en" }}/en/privacy/{{ else }}/datenschutz/{{ end }}">{{ i18n "footer_privacy" }}</a>
       </span>
     </div>
   </div>
