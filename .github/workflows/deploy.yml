@@ -20,13 +20,9 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy via LFTP
-        run: |
-          sudo apt-get install -y lftp
-          lftp -e "
-            set ssl:verify-certificate no;
-            set ftp:ssl-allow yes;
-            open ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@gauntlet.reclaimhosting.com;
-            mirror --reverse --delete --verbose public/ /public_html/;
-            quit
-          "
+      - name: Deploy to deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: deploy
