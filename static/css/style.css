@@ -688,11 +688,94 @@ footer {
   transform: translateY(0);
 }
 
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hamburger button – hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  margin: 4px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Hamburger → X animation */
+nav.nav-open .hamburger-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+nav.nav-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+nav.nav-open .hamburger-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Vollgas hamburger */
+body.vollgas .hamburger-line { background: #bba8d9; }
+
+/* Desktop: nav-menu is inline */
+.nav-menu {
+  display: contents;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   html { font-size: 16px; }
-  nav { padding: 0.7rem 1.2rem; }
-  nav .nav-links { gap: 1rem; }
+
+  /* Hamburger visible */
+  .hamburger { display: block; }
+
+  /* Mobile nav layout */
+  nav {
+    padding: 0.7rem 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0 0.5rem;
+  }
+
+  nav.nav-open .nav-menu {
+    display: flex;
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  nav .nav-links a {
+    font-size: 0.88rem;
+  }
+
+  .nav-lang {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  /* Hide <br> in headings on mobile */
+  h1 br, h2 br, h3 br { display: none; }
+
   .container { padding: 0 1.2rem; }
   .hero { min-height: auto; padding-top: 6rem; padding-bottom: var(--space-lg); }
   .hero-content { grid-template-columns: 1fr; gap: var(--space-md); }
@@ -705,4 +788,22 @@ footer {
   .ref-grid { grid-template-columns: 1fr; }
   .color-toggle { bottom: 1.2rem; right: 1.2rem; width: 32px; height: 32px; }
   .contact-content h2 { font-size: 2.2rem; }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+  .container { padding: 0 1rem; }
+  .hero { padding-top: 5rem; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-tagline { font-size: 0.78rem; }
+  .hero-intro { font-size: 0.9rem; }
+  .hero-photo { max-width: 220px; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.2rem; }
+  .section-label { font-size: 0.65rem; }
+  .contact-content h2 { font-size: 1.8rem; }
+  .contact-email { font-size: 1.15rem; }
+  nav { padding: 0.6rem 1rem; }
+  nav .nav-name { font-size: 1rem; }
 }
