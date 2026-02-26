@@ -162,3 +162,138 @@ other = "Every character counts."
 
 [easter_egg_desc]
 other = "This site uses Atkinson Hyperlegible Next — a free typeface by the Braille Institute, designed for maximum legibility."
+
+# ===== Work Areas (Homepage) =====
+
+[work_areas_label]
+other = "Work Areas"
+
+[work_card_consulting_title]
+other = "Organizational Consulting"
+
+[work_card_consulting_desc]
+other = "Strategy processes, change management and organizational development for academia, education and civil society."
+
+[work_card_podcasting_title]
+other = "Podcasting"
+
+[work_card_podcasting_desc]
+other = "Concept development, production and hosting of podcasts — from the first idea to a finished season."
+
+[work_card_cta]
+other = "Learn more"
+
+# ===== Consulting Subpage =====
+
+[consulting_services_label]
+other = "Focus Areas"
+
+[process_label]
+other = "The Consulting Process"
+
+[process_step1_title]
+other = "Analysis"
+
+[process_step1_desc]
+other = "Conversations, document analysis, focus groups — a thorough understanding of the starting situation and the perspectives involved."
+
+[process_step2_title]
+other = "Concept Development"
+
+[process_step2_desc]
+other = "Based on the analysis, I develop options for action, scenarios and a concrete consulting plan."
+
+[process_step3_title]
+other = "Implementation Support"
+
+[process_step3_desc]
+other = "Workshops, interventions, direct advisory work with leadership and teams — typically over several months."
+
+[process_step4_title]
+other = "Reflection & Transfer"
+
+[process_step4_desc]
+other = "Regular evaluation, readjustment and securing results for the organization's ongoing work."
+
+[sectors_label]
+other = "Who I Work With"
+
+[sector1_title]
+other = "Universities"
+
+[sector1_desc]
+other = "Digital strategies, structural reforms, science communication, governance"
+
+[sector2_title]
+other = "Foundations"
+
+[sector2_desc]
+other = "Program work, impact orientation, communication, capacity building"
+
+[sector3_title]
+other = "Associations"
+
+[sector3_desc]
+other = "Restructuring, professionalization, internal communication"
+
+[sector4_title]
+other = "Public Institutions"
+
+[sector4_desc]
+other = "Digital transformation, change processes, knowledge management"
+
+[consulting_cta_heading]
+other = "Sounds like a fit?"
+
+[consulting_cta_button]
+other = "Get in touch"
+
+# ===== Podcasting Subpage =====
+
+[podcast_services_label]
+other = "Services"
+
+[past_productions_label]
+other = "Past Productions"
+
+[podcast_process_label]
+other = "How a Podcast Project Works"
+
+[podcast_process_step1_title]
+other = "Briefing"
+
+[podcast_process_step1_desc]
+other = "We clarify target audience, goals, format and constraints. This results in an initial concept."
+
+[podcast_process_step2_title]
+other = "Pilot Episode"
+
+[podcast_process_step2_desc]
+other = "A first episode is produced — as a test run for content, tone and technology."
+
+[podcast_process_step3_title]
+other = "Season Production"
+
+[podcast_process_step3_desc]
+other = "Regular recording, editing and publishing — reliable and consistently high quality."
+
+[podcast_process_step4_title]
+other = "Evolution"
+
+[podcast_process_step4_desc]
+other = "Evaluating feedback, refining the format, planning new seasons — I provide long-term support if needed."
+
+[audio_sample_label]
+other = "Listen In"
+
+[audio_sample_desc]
+other = "A good starting point: the latest episode of Die Sicherheits_lücke — cybersecurity made accessible, well-researched and with a clear perspective."
+
+[audio_sample_cta]
+other = "Listen now"
+
+[podcasting_cta_heading]
+other = "Developing your own format?"
+
+[podcasting_cta_button]
+other = "Let's talk"

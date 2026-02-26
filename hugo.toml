@@ -10,12 +10,16 @@ defaultContentLanguageInSubdir = false
     contentDir = 'content/de'
     [languages.de.params]
       description = 'Organisationsberatung · Podcasting · Moderation'
+      consultingUrl = '/beratung/'
+      podcastingUrl = '/podcasting/'
   [languages.en]
     languageName = 'EN'
     weight = 2
     contentDir = 'content/en'
     [languages.en.params]
       description = 'Organizational Consulting · Podcasting · Facilitation'
+      consultingUrl = '/en/consulting/'
+      podcastingUrl = '/en/podcasting/'
 
 [params]
   email = 'me@christianfriedrich.org'
