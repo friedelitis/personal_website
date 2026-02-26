@@ -1,0 +1,59 @@
+# ===== SECURITY HEADERS =====
+
+<IfModule mod_headers.c>
+  # HTTPS erzwingen (1 Jahr)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+  # Clickjacking verhindern
+  Header always set X-Frame-Options "DENY"
+
+  # MIME-Sniffing verhindern
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Referrer nur als Origin weitergeben
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Browser-Features deaktivieren (Kamera, Mikrofon, Geolocation etc.)
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
+  # Content Security Policy (strikt für statische Seite)
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+
+  # Server-Header unterdrücken
+  Header always unset Server
+  Header unset X-Powered-By
+</IfModule>
+
+# ===== CACHING =====
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Fonts: 1 Jahr (ändern sich selten)
+  ExpiresByType font/woff2 "access plus 1 year"
+
+  # Bilder: 1 Monat
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+
+  # CSS/JS: 1 Woche (können sich bei Deployments ändern)
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+
+  # HTML: kein Cache (immer frisch)
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# ===== KOMPRESSION =====
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
+</IfModule>
+
+# ===== DNS PREFETCH KONTROLLE =====
+
+<IfModule mod_headers.c>
+  Header set X-DNS-Prefetch-Control "off"
+</IfModule>

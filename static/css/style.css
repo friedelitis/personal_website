@@ -51,7 +51,7 @@ body {
   line-height: 1.65;
   color: var(--color-text);
   background: var(--color-bg);
-  transition: all 0.6s ease;
+  transition: background-color 0.6s ease, color 0.6s ease;
   overflow-x: hidden;
 }
 
@@ -64,7 +64,7 @@ a {
   color: var(--color-accent);
   text-decoration-color: rgba(123, 47, 247, 0.3);
   text-underline-offset: 3px;
-  transition: all 0.25s;
+  transition: color 0.25s, text-decoration-color 0.25s;
 }
 
 a:hover {
@@ -238,7 +238,7 @@ body.vollgas .overscroll-msg a { color: #C850C0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease;
+  transition: opacity 0.4s ease, transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
   opacity: 0.5;
 }
 
@@ -268,7 +268,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.5s;
+  transition: background-color 0.5s, border-color 0.5s;
 }
 
 nav .nav-name {
@@ -278,7 +278,7 @@ nav .nav-name {
   letter-spacing: -0.01em;
   text-decoration: none;
   color: var(--color-text);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 nav .nav-links {
@@ -348,7 +348,7 @@ section { padding: var(--space-xl) 0; }
   line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: var(--space-sm);
-  transition: all 0.5s;
+  transition: color 0.5s;
 }
 
 .hero-tagline {
@@ -382,7 +382,7 @@ section { padding: var(--space-xl) 0; }
   border: 1.5px solid var(--color-accent);
   color: var(--color-accent);
   text-decoration: none;
-  transition: all 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .hero-cta:hover {
@@ -402,7 +402,7 @@ section { padding: var(--space-xl) 0; }
   text-transform: uppercase;
   color: var(--color-accent);
   margin-bottom: var(--space-md);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 h2 {
@@ -429,7 +429,7 @@ p + p { margin-top: var(--space-sm); }
   border: none;
   border-top: 1px solid var(--color-border);
   margin: 0;
-  transition: all 0.4s;
+  transition: border-color 0.4s;
 }
 
 /* About */
@@ -451,7 +451,7 @@ p + p { margin-top: var(--space-sm); }
   width: 100%;
   display: block;
   margin-bottom: var(--space-md);
-  transition: all 0.4s;
+  transition: box-shadow 0.4s;
 }
 
 .credentials {
@@ -477,7 +477,7 @@ p + p { margin-top: var(--space-sm); }
   background: var(--color-bg-alt);
   border-left: 3px solid var(--color-accent);
   border-radius: 0 4px 4px 0;
-  transition: all 0.4s;
+  transition: background-color 0.4s, border-color 0.4s;
 }
 
 .how-i-work h3 { margin-bottom: var(--space-sm); }
@@ -501,7 +501,7 @@ p + p { margin-top: var(--space-sm); }
 .service-card {
   padding: var(--space-md) var(--space-sm) var(--space-md) 0;
   border-top: 2px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s, background 0.3s, padding-left 0.3s;
 }
 
 .service-card:hover {
@@ -531,7 +531,7 @@ p + p { margin-top: var(--space-sm); }
 .ref-item {
   padding: var(--space-sm) 0;
   border-top: 1px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s;
 }
 
 .ref-item .ref-org {
@@ -561,7 +561,7 @@ p + p { margin-top: var(--space-sm); }
 .podcast-service-card {
   padding: var(--space-md) 0;
   border-top: 2px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s;
 }
 
 .podcast-service-card:hover { border-top-color: var(--color-accent); }
@@ -578,7 +578,7 @@ p + p { margin-top: var(--space-sm); }
   margin-top: var(--space-md);
   padding: var(--space-md) 0;
   border-top: 1px solid var(--color-border);
-  transition: all 0.3s;
+  transition: border-color 0.3s;
 }
 
 .podcast-format h3 { font-size: 1.25rem; }
@@ -602,7 +602,7 @@ p + p { margin-top: var(--space-sm); }
 .contact-content h2 {
   font-size: 2.8rem;
   margin-bottom: var(--space-sm);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 .contact-email {
@@ -612,7 +612,7 @@ p + p { margin-top: var(--space-sm); }
   letter-spacing: -0.01em;
   display: inline-block;
   margin-bottom: var(--space-md);
-  transition: all 0.4s;
+  transition: color 0.4s;
 }
 
 .contact-links {
@@ -634,7 +634,7 @@ footer {
   border-top: 1px solid var(--color-border);
   font-size: 0.75rem;
   color: var(--color-text-tertiary);
-  transition: all 0.4s;
+  transition: color 0.4s, border-color 0.4s;
 }
 
 .footer-content {
@@ -687,16 +687,6 @@ footer {
 }
 
 
-
-@keyframes pedal-rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Leg bob animation for rider */
-.vehicle-right.riding line[class*="leg"] {
-  /* subtle movement hint */
-}
 
 /* Animations */
 .fade-in {
@@ -817,11 +807,151 @@ footer {
   color: var(--color-accent-pink);
 }
 
+/* ===== CONTENT PAGES (Datenschutz, Impressum etc.) ===== */
+.page-content {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.page-content h1 {
+  font-family: var(--font-body);
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+}
+
+.page-content h2 {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.page-content h3 {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.page-content p {
+  color: var(--color-text);
+  line-height: 1.75;
+  margin-bottom: var(--space-sm);
+}
+
+.page-content ul,
+.page-content ol {
+  margin-bottom: var(--space-sm);
+  padding-left: 1.5rem;
+}
+
+.page-content li {
+  line-height: 1.75;
+  margin-bottom: 0.3rem;
+  color: var(--color-text);
+}
+
+.page-content strong {
+  font-weight: 600;
+}
+
+.page-content a {
+  color: var(--color-accent);
+  text-decoration-color: rgba(123, 47, 247, 0.3);
+  text-underline-offset: 3px;
+}
+
+.page-content a:hover {
+  color: var(--color-accent-pink);
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hamburger button – hidden on desktop */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 101;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  margin: 4px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Hamburger → X animation */
+nav.nav-open .hamburger-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+nav.nav-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+nav.nav-open .hamburger-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Vollgas hamburger */
+body.vollgas .hamburger-line { background: #bba8d9; }
+
+/* Desktop: nav-menu is inline */
+.nav-menu {
+  display: contents;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   html { font-size: 16px; }
-  nav { padding: 0.7rem 1.2rem; }
-  nav .nav-links { gap: 1rem; }
+
+  /* Hamburger visible */
+  .hamburger { display: block; }
+
+  /* Mobile nav layout */
+  nav {
+    padding: 0.7rem 1.2rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0 0.5rem;
+  }
+
+  nav.nav-open .nav-menu {
+    display: flex;
+  }
+
+  nav .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  nav .nav-links a {
+    font-size: 0.88rem;
+  }
+
+  .nav-lang {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  /* Hide <br> in headings on mobile */
+  h1 br, h2 br, h3 br { display: none; }
+
   .container { padding: 0 1.2rem; }
   .hero { min-height: auto; padding-top: 6rem; padding-bottom: var(--space-lg); }
   .hero-content { grid-template-columns: 1fr; gap: var(--space-md); }
@@ -834,4 +964,25 @@ footer {
   .ref-grid { grid-template-columns: 1fr; }
   .color-toggle { bottom: 1.2rem; right: 1.2rem; width: 32px; height: 32px; }
   .contact-content h2 { font-size: 2rem; }
+  .page-content { padding: var(--space-lg) 0 var(--space-md); }
+  .page-content h1 { font-size: 2rem; margin-bottom: var(--space-md); }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+  .container { padding: 0 1rem; }
+  .hero { padding-top: 5rem; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-tagline { font-size: 0.78rem; }
+  .hero-intro { font-size: 0.9rem; }
+  .hero-photo { max-width: 220px; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.2rem; }
+  .section-label { font-size: 0.65rem; }
+  .contact-content h2 { font-size: 1.8rem; }
+  .contact-email { font-size: 1.15rem; }
+  nav { padding: 0.6rem 1rem; }
+  nav .nav-name { font-size: 1rem; }
+  .page-content h1 { font-size: 1.8rem; }
 }

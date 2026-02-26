@@ -35,7 +35,7 @@
         <img src="{{ .Site.Params.aboutPhoto }}" alt="Christian Friedrich" loading="lazy">
         <div class="credentials">
           <strong>{{ i18n "credentials_label" }}</strong>
-          {{ i18n "credentials_list" }}
+          {{ i18n "credentials_list" | safeHTML }}
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
 <section id="beratung" class="fade-in">
   <div class="container">
     <span class="section-label">{{ i18n "consulting_label" }}</span>
-    <h2>{{ i18n "consulting_h2" }}</h2>
+    <h2>{{ i18n "consulting_h2" | safeHTML }}</h2>
     <p>{{ i18n "consulting_intro1" }}</p>
     <p>{{ i18n "consulting_intro2" }}</p>
 
