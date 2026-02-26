@@ -153,3 +153,12 @@ other = "talk"
 
 [vollgas_aria]
 other = "Toggle color mode"
+
+[easter_egg_hint]
+other = "Can you see the difference?"
+
+[easter_egg_title]
+other = "Every character counts."
+
+[easter_egg_desc]
+other = "This site uses Atkinson Hyperlegible Next — a free typeface by the Braille Institute, designed for maximum legibility."

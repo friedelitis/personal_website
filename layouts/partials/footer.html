@@ -1,7 +1,7 @@
 <footer>
   <div class="container">
     <div class="footer-content">
-      <span>{{ i18n "footer_copy" }}</span>
+      <span>{{ i18n "footer_copy" }} <span class="font-easter-egg" id="fontEasterEgg" title="{{ i18n "easter_egg_hint" }}">Il1</span></span>
       <span class="footer-legal">
         <a href="{{ if eq .Language.Lang "en" }}/en/imprint/{{ else }}/impressum/{{ end }}">{{ i18n "footer_imprint" }}</a>
         <a href="{{ if eq .Language.Lang "en" }}/en/privacy/{{ else }}/datenschutz/{{ end }}">{{ i18n "footer_privacy" }}</a>
@@ -9,3 +9,18 @@
     </div>
   </div>
 </footer>
+
+<div class="font-overlay" id="fontOverlay">
+  <div class="font-overlay-card">
+    <button class="font-overlay-close" id="fontOverlayClose" aria-label="Close">&times;</button>
+    <div class="font-overlay-specimen">
+      <span>I l 1</span>
+      <span>O 0 o</span>
+      <span>8 B</span>
+      <span>r n m</span>
+    </div>
+    <p class="font-overlay-title">{{ i18n "easter_egg_title" }}</p>
+    <p class="font-overlay-desc">{{ i18n "easter_egg_desc" }}</p>
+    <a href="https://brailleinstitute.org/freefont" target="_blank" rel="noopener" class="font-overlay-link">brailleinstitute.org/freefont &nearr;</a>
+  </div>
+</div>

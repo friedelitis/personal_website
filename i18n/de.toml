@@ -153,3 +153,12 @@ other = "reden"
 
 [vollgas_aria]
 other = "Farbe umschalten"
+
+[easter_egg_hint]
+other = "Kannst du den Unterschied sehen?"
+
+[easter_egg_title]
+other = "Jeder Buchstabe zählt."
+
+[easter_egg_desc]
+other = "Diese Seite nutzt Atkinson Hyperlegible Next — eine freie Schrift des Braille Institute, entworfen für maximale Lesbarkeit."
