@@ -52,6 +52,27 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Font Easter Egg
+const fontEgg = document.getElementById('fontEasterEgg');
+const fontOverlay = document.getElementById('fontOverlay');
+const fontOverlayClose = document.getElementById('fontOverlayClose');
+
+fontEgg.addEventListener('click', () => {
+  fontOverlay.classList.add('visible');
+});
+
+fontOverlayClose.addEventListener('click', () => {
+  fontOverlay.classList.remove('visible');
+});
+
+fontOverlay.addEventListener('click', (e) => {
+  if (e.target === fontOverlay) fontOverlay.classList.remove('visible');
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') fontOverlay.classList.remove('visible');
+});
+
 // Language switcher
 document.querySelectorAll('.nav-lang a').forEach(link => {
   link.addEventListener('click', function(e) {
