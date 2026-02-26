@@ -1,0 +1,137 @@
+{{ define "main" }}
+
+{{/* ===== PAGE HERO ===== */}}
+<section class="page-hero fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "podcasting_label" }}</span>
+    <h1>{{ i18n "podcasting_h2" }}</h1>
+    <div class="page-hero-text">
+      <p>{{ i18n "podcasting_intro" }}</p>
+    </div>
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== SERVICES ===== */}}
+<section class="fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "podcast_services_label" }}</span>
+    <div class="podcast-services">
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc1_title" }}</h3>
+        <p>{{ i18n "podcast_svc1_desc" }}</p>
+      </div>
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc2_title" }}</h3>
+        <p>{{ i18n "podcast_svc2_desc" }}</p>
+      </div>
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc3_title" }}</h3>
+        <p>{{ i18n "podcast_svc3_desc" }}</p>
+      </div>
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc4_title" }}</h3>
+        <p>{{ i18n "podcast_svc4_desc" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== CURRENT FORMATS ===== */}}
+<section class="fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "current_formats" }}</span>
+
+    <div class="podcast-format">
+      <h3>Die Sicherheits_lücke</h3>
+      <p class="podcast-meta">{{ i18n "sicherheitsluecke_desc" }}</p>
+      <a href="https://www.sicherheitsluecke.fm" class="podcast-link" target="_blank" rel="noopener">→ sicherheitsluecke.fm</a>
+    </div>
+
+    <div class="podcast-format">
+      <h3>Hamburg, was willst du wissen?</h3>
+      <p class="podcast-meta">{{ i18n "hwwdw_desc" }}</p>
+      <a href="https://www.hamburgwaswillstduwissen.de" class="podcast-link" target="_blank" rel="noopener">→ hamburgwaswillstduwissen.de</a>
+    </div>
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== PAST PRODUCTIONS ===== */}}
+<section class="fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "past_productions_label" }}</span>
+    <div class="podcast-portfolio">
+      {{ range .Site.Data.podcasts.productions }}
+      <div class="portfolio-item">
+        <h3>{{ index (index . $.Language.Lang) "title" }}</h3>
+        <p class="portfolio-role">{{ index (index . $.Language.Lang) "role" }}</p>
+        <p class="portfolio-desc">{{ index (index . $.Language.Lang) "desc" }}</p>
+        {{ with index (index . $.Language.Lang) "url" }}
+        <a href="{{ . }}" class="podcast-link" target="_blank" rel="noopener">→ {{ . | replaceRE "^https?://(www\\.)?" "" | replaceRE "/$" "" }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== PROCESS ===== */}}
+<section class="fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "podcast_process_label" }}</span>
+    <div class="process-steps">
+      <div class="process-step">
+        <span class="process-number">01</span>
+        <h3>{{ i18n "podcast_process_step1_title" }}</h3>
+        <p>{{ i18n "podcast_process_step1_desc" }}</p>
+      </div>
+      <div class="process-step">
+        <span class="process-number">02</span>
+        <h3>{{ i18n "podcast_process_step2_title" }}</h3>
+        <p>{{ i18n "podcast_process_step2_desc" }}</p>
+      </div>
+      <div class="process-step">
+        <span class="process-number">03</span>
+        <h3>{{ i18n "podcast_process_step3_title" }}</h3>
+        <p>{{ i18n "podcast_process_step3_desc" }}</p>
+      </div>
+      <div class="process-step">
+        <span class="process-number">04</span>
+        <h3>{{ i18n "podcast_process_step4_title" }}</h3>
+        <p>{{ i18n "podcast_process_step4_desc" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== AUDIO SAMPLE ===== */}}
+<section class="fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "audio_sample_label" }}</span>
+    <div class="audio-sample">
+      <p>{{ i18n "audio_sample_desc" }}</p>
+      <a href="https://www.sicherheitsluecke.fm" class="audio-sample-link" target="_blank" rel="noopener">{{ i18n "audio_sample_cta" }} →</a>
+    </div>
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== CTA ===== */}}
+<section class="page-cta fade-in">
+  <div class="container">
+    <h2>{{ i18n "podcasting_cta_heading" }}</h2>
+    <a href="mailto:{{ .Site.Params.email }}" class="page-cta-button">{{ i18n "podcasting_cta_button" }}</a>
+  </div>
+</section>
+
+{{ end }}

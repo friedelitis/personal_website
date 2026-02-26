@@ -1,0 +1,47 @@
+[[productions]]
+  [productions.de]
+    title = "Zugang gestalten!"
+    role = "Konzeption & Produktion"
+    desc = "Podcast-Begleitung der gleichnamigen Konferenz zu digitalen Sammlungen in Kultureinrichtungen. Aufzeichnung und Aufbereitung von Panels, Interviews mit Referent*innen."
+    url = "https://zugang-gestalten.org"
+  [productions.en]
+    title = "Zugang gestalten!"
+    role = "Concept & Production"
+    desc = "Podcast companion to the conference on digital collections in cultural institutions. Recording and post-production of panels and speaker interviews."
+    url = "https://zugang-gestalten.org"
+
+[[productions]]
+  [productions.de]
+    title = "Exploring OER"
+    role = "Konzeption, Hosting & Produktion"
+    desc = "Gespräche über offene Bildung und Open Educational Resources mit Akteuren aus Bildung und Wissenschaft."
+    url = ""
+  [productions.en]
+    title = "Exploring OER"
+    role = "Concept, Hosting & Production"
+    desc = "Conversations about open education and Open Educational Resources with practitioners from education and research."
+    url = ""
+
+[[productions]]
+  [productions.de]
+    title = "FeuerundBrot"
+    role = "Produktionsberatung"
+    desc = "Beratung bei der technischen und konzeptionellen Weiterentwicklung eines etablierten feministischen Gesprächspodcasts."
+    url = "https://feuerundbrot.de"
+  [productions.en]
+    title = "FeuerundBrot"
+    role = "Production Consulting"
+    desc = "Advisory support for technical and conceptual development of an established feminist conversation podcast."
+    url = "https://feuerundbrot.de"
+
+[[productions]]
+  [productions.de]
+    title = "HOOU-Podcasts"
+    role = "Konzeption & Produktion"
+    desc = "Verschiedene Podcast-Formate für die Hamburg Open Online University: von Wissenschaftskommunikation bis Lernangebote."
+    url = "https://www.hoou.de"
+  [productions.en]
+    title = "HOOU Podcasts"
+    role = "Concept & Production"
+    desc = "Various podcast formats for the Hamburg Open Online University: from science communication to educational offerings."
+    url = "https://www.hoou.de"

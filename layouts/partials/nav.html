@@ -7,10 +7,10 @@
   </button>
   <div class="nav-menu">
     <ul class="nav-links">
-      <li><a href="#ueber">{{ i18n "nav_about" }}</a></li>
-      <li><a href="#beratung">{{ i18n "nav_consulting" }}</a></li>
-      <li><a href="#podcasting">{{ i18n "nav_podcasting" }}</a></li>
-      <li><a href="#kontakt">{{ i18n "nav_contact" }}</a></li>
+      <li><a href="{{ relLangURL "/" }}#ueber">{{ i18n "nav_about" }}</a></li>
+      <li><a href="{{ .Language.Params.consultingUrl }}">{{ i18n "nav_consulting" }}</a></li>
+      <li><a href="{{ .Language.Params.podcastingUrl }}">{{ i18n "nav_podcasting" }}</a></li>
+      <li><a href="{{ relLangURL "/" }}#kontakt">{{ i18n "nav_contact" }}</a></li>
     </ul>
     <span class="nav-lang">
       {{- if eq .Language.Lang "de" -}}

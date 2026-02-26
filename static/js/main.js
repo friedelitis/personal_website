@@ -26,14 +26,33 @@ hamburger.addEventListener('click', () => {
   hamburger.setAttribute('aria-expanded', open);
 });
 
-// Smooth scroll (+ close mobile menu on nav click)
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
+// Close mobile menu on any nav click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
     navEl.classList.remove('nav-open');
     hamburger.setAttribute('aria-expanded', 'false');
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// Smooth scroll for anchor links (works on homepage and from subpages)
+document.querySelectorAll('nav a[href*="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    const hashIndex = href.indexOf('#');
+    const path = href.substring(0, hashIndex);
+    const hash = href.substring(hashIndex);
+
+    // Check if we're already on the target page
+    const currentPath = window.location.pathname;
+    const isHomepage = path === '/' || path === '/en/' || path === '';
+    const onHomepage = currentPath === '/' || currentPath === '/en/';
+
+    if (isHomepage && onHomepage) {
+      e.preventDefault();
+      const target = document.querySelector(hash);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    // Otherwise let the browser navigate normally (path + hash)
   });
 });
 
