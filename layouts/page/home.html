@@ -35,7 +35,7 @@
         <img src="{{ .Site.Params.aboutPhoto }}" alt="Christian Friedrich" loading="lazy">
         <div class="credentials">
           <strong>{{ i18n "credentials_label" }}</strong>
-          {{ i18n "credentials_list" | safeHTML }}
+          {{ i18n "credentials_list" }}
         </div>
       </div>
     </div>
@@ -44,21 +44,94 @@
 
 <div class="container"><hr class="divider"></div>
 
-{{/* ===== WORK AREAS ===== */}}
-<section class="fade-in">
+{{/* ===== CONSULTING ===== */}}
+<section id="beratung" class="fade-in">
   <div class="container">
-    <span class="section-label">{{ i18n "work_areas_label" }}</span>
-    <div class="work-cards">
-      <a href="{{ .Language.Params.consultingUrl }}" class="work-card">
-        <h3>{{ i18n "work_card_consulting_title" }}</h3>
-        <p>{{ i18n "work_card_consulting_desc" }}</p>
-        <span class="work-card-cta">{{ i18n "work_card_cta" }} →</span>
-      </a>
-      <a href="{{ .Language.Params.podcastingUrl }}" class="work-card">
-        <h3>{{ i18n "work_card_podcasting_title" }}</h3>
-        <p>{{ i18n "work_card_podcasting_desc" }}</p>
-        <span class="work-card-cta">{{ i18n "work_card_cta" }} →</span>
-      </a>
+    <span class="section-label">{{ i18n "consulting_label" }}</span>
+    <h2>{{ i18n "consulting_h2" }}</h2>
+    <p>{{ i18n "consulting_intro1" }}</p>
+    <p>{{ i18n "consulting_intro2" }}</p>
+
+    <div class="how-i-work">
+      <h3>{{ i18n "how_i_work" }}</h3>
+      <p>{{ i18n "how_i_work_p1" }}</p>
+      <p>{{ i18n "how_i_work_p2" }}</p>
+      <p>{{ i18n "how_i_work_p3" }}</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>{{ i18n "service1_title" }}</h3>
+        <p>{{ i18n "service1_desc" }}</p>
+      </div>
+      <div class="service-card">
+        <h3>{{ i18n "service2_title" }}</h3>
+        <p>{{ i18n "service2_desc" }}</p>
+      </div>
+      <div class="service-card">
+        <h3>{{ i18n "service3_title" }}</h3>
+        <p>{{ i18n "service3_desc" }}</p>
+      </div>
+    </div>
+
+    {{/* Referenzen temporär ausgeblendet – bei Bedarf Kommentar entfernen
+    <div class="references">
+      <span class="section-label">{{ i18n "references_label" }}</span>
+      <div class="ref-grid">
+        {{ range .Site.Data.references.refs }}
+        <div class="ref-item">
+          <div class="ref-org">{{ index (index . $.Language.Lang) "org" }}</div>
+          <div class="ref-desc">{{ index (index . $.Language.Lang) "desc" }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    */}}
+  </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+{{/* ===== PODCASTING ===== */}}
+<section id="podcasting" class="fade-in">
+  <div class="container">
+    <span class="section-label">{{ i18n "podcasting_label" }}</span>
+    <h2>{{ i18n "podcasting_h2" }}</h2>
+    <p>{{ i18n "podcasting_intro" }}</p>
+
+    <div class="podcast-services">
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc1_title" }}</h3>
+        <p>{{ i18n "podcast_svc1_desc" }}</p>
+      </div>
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc2_title" }}</h3>
+        <p>{{ i18n "podcast_svc2_desc" }}</p>
+      </div>
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc3_title" }}</h3>
+        <p>{{ i18n "podcast_svc3_desc" }}</p>
+      </div>
+      <div class="podcast-service-card">
+        <h3>{{ i18n "podcast_svc4_title" }}</h3>
+        <p>{{ i18n "podcast_svc4_desc" }}</p>
+      </div>
+    </div>
+
+    <div style="margin-top: var(--space-lg);">
+      <span class="section-label">{{ i18n "current_formats" }}</span>
+    </div>
+
+    <div class="podcast-format">
+      <h3>Die Sicherheits_lücke</h3>
+      <p class="podcast-meta">{{ i18n "sicherheitsluecke_desc" }}</p>
+      <a href="https://www.sicherheitsluecke.fm" class="podcast-link" target="_blank" rel="noopener">→ sicherheitsluecke.fm</a>
+    </div>
+
+    <div class="podcast-format">
+      <h3>Hamburg, was willst du wissen?</h3>
+      <p class="podcast-meta">{{ i18n "hwwdw_desc" }}</p>
+      <a href="https://www.hamburgwaswillstduwissen.de" class="podcast-link" target="_blank" rel="noopener">→ hamburgwaswillstduwissen.de</a>
     </div>
   </div>
 </section>
