@@ -15,3 +15,6 @@ Thumbs.db
 
 # Hugo lock
 .hugo_build.lock
+.claude/
+CLAUDE.md
+*.tar.gz
